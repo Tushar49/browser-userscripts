@@ -3,3 +3,40 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Local agent/tool state — **/ matches at any depth
+**/.omo/
+**/.codegraph/
+
+# Local editor state (never commit)
+**/.vscode/
+**/.idea/
+
+# Agent/tool caches
+**/.opencode-cache/
+**/.claude/
+**/.gemini/
+**/.cursor/
+**/.windsurf/
+**/.aider*
+**/.muse/
+**/opencode.log
+
+# Backup / swap / temp files
+*.tmp
+*.temp
+*.bak
+*.orig
+*~
+*.swp
+
+# Local secrets (never commit)
+.env
+
+# Build / test / python artifacts (only if added later)
+**/build/
+**/coverage/
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
