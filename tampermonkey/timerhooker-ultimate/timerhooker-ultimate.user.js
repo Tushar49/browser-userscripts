@@ -11,9 +11,9 @@
     // @grant           none
     // @inject-into     page
     // @license         GPL-3.0-or-later
-    // @namespace       https://github.com/userscripts
-    // @homepageURL     https://github.com/userscripts/tampermonkey/timerhooker-ultimate
-    // @supportURL      https://github.com/userscripts/issues
+    // @namespace       https://github.com/Tushar49/browser-userscripts
+    // @homepageURL     https://github.com/Tushar49/browser-userscripts/tree/main/tampermonkey/timerhooker-ultimate
+    // @supportURL      https://github.com/Tushar49/browser-userscripts/issues
     // ==/UserScript==
     /**
      * ---------------------------

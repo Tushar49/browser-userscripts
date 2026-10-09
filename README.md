@@ -1,11 +1,13 @@
-# userscripts
+# browser-userscripts
 
 Monorepo for userscripts (Tampermonkey/Violentmonkey) + dev-console snippets.
+
+Repo: https://github.com/Tushar49/browser-userscripts
 
 ## Layout
 
 ```text
-userscripts/
+browser-userscripts/
   README.md
   LICENSE (GPL-3.0-or-later)
   tampermonkey/
@@ -27,6 +29,6 @@ userscripts/
 ## Conventions
 
 - One folder per script: `<slug>/<slug>.user.js` + `README.md` + `CHANGELOG.md`.
-- Userscript header: `@name`, `@namespace https://github.com/userscripts`, `@version`, `@description`, `@match`, `@grant`, `@homepageURL` (folder), `@supportURL` (issues), `@license`.
+- Userscript header: `@name`, `@namespace https://github.com/Tushar49/browser-userscripts`, `@version`, `@description`, `@match`, `@grant`, `@homepageURL` (folder), `@supportURL` (issues), `@license`.
 - GreasyFork syncs from raw GitHub URL of the `.user.js` file.
 - GPL-3.0-or-later (TimerHooker parents are GPL).
