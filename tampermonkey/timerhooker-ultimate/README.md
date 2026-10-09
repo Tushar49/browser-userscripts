@@ -20,7 +20,7 @@ Fork lineage: Cangshi original (372673) → Tiger 27 English 1.2.1 (438894) → 
 1. Install a userscript manager: **Tampermonkey** (recommended), Violentmonkey, or Greasemonkey.
 2. Install `timerhooker-ultimate.user.js`:
    - dev: Tampermonkey Dashboard → `+` → paste file → Save.
-   - release: GreasyFork page (URL TBD after publish) → Install.
+   - release: [GreasyFork 599400](https://greasyfork.org/en/scripts/599400-timerhooker-ultimate) → Install.
 3. Open any site — the ball appears on the left. Hover → pick speed. Badge shows current multiplier.
 
 Requires `Everything-Hook` library (pinned `@require ...?version=881251`).

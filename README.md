@@ -24,7 +24,7 @@ browser-userscripts/
 
 | Script | What | Source | Install |
 |---|---|---|---|
-| TimerHooker Ultimate | timer/video+audio speed, ad-skip, SPA-safe | [tampermonkey/timerhooker-ultimate](./tampermonkey/timerhooker-ultimate/) | GreasyFork URL TBD |
+| TimerHooker Ultimate | timer/video+audio speed, ad-skip, SPA-safe | [tampermonkey/timerhooker-ultimate](./tampermonkey/timerhooker-ultimate/) | [GreasyFork 599400](https://greasyfork.org/en/scripts/599400-timerhooker-ultimate) |
 
 ## Conventions
 
