@@ -1,6 +1,7 @@
-node_modules/
+**/node_modules/
 dist/
 *.log
+**/taco.log
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -14,7 +15,15 @@ desktop.ini
 **/.idea/
 
 # Agent/tool caches
+**/.taco/
+**/.opencode/
 **/.opencode-cache/
+**/.codex/
+**/.continue/
+**/.kilocode/
+**/.roo/
+**/.qoder/
+**/.trae/
 **/.claude/
 **/.gemini/
 **/.cursor/
@@ -22,6 +31,10 @@ desktop.ini
 **/.aider*
 **/.muse/
 **/opencode.log
+
+# Local history / IDE state extras (never commit)
+**/.history/
+**/.vs/
 
 # Backup / swap / temp files
 *.tmp
