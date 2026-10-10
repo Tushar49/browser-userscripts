@@ -24,7 +24,7 @@ browser-userscripts/
 |---|---|---|
 | Release userscript | `tampermonkey/timerhooker-ultimate/timerhooker-ultimate.user.js` | v2.0.0, only file GreasyFork syncs |
 | Verbatim reference | `tampermonkey/timerhooker-ultimate/2026-carcass.user.js` | 2026 base 1.4.2, read-only, never edit |
-| Script docs | `tampermonkey/timerhooker-ultimate/README.md`, `CHANGELOG.md` | Usage/shortcuts table = source for GreasyFork long description |
+| Script docs | `tampermonkey/timerhooker-ultimate/README.md`, `CHANGELOG.md`, `greasyfork-description.md` + `greasyfork-description.html` | README usage/shortcuts table = content source; `greasyfork-description.*` are the verbatim GreasyFork Admin-tab sync sources |
 | Repo docs | `README.md` | Script table + GreasyFork link |
 | Snippets | `console/` | One file per snippet + README entry |
 | Reference inputs (outside repo) | `D:\Temp\` | comparison reports, TSun sources — never move into repo |
@@ -35,6 +35,9 @@ browser-userscripts/
 - Userscript header (every release file): `@name`, `@namespace https://github.com/Tushar49/browser-userscripts`, `@version`, `@description`, `@match`, `@grant`, `@homepageURL` (folder URL), `@supportURL` (repo issues), `@license GPL-3.0-or-later`.
 - `@require` must be pinned (`?version=N`); floating `?download` is forbidden (supply-chain drift).
 - GreasyFork 599400 syncs from raw GitHub URL of the `.user.js` file — push to `main` triggers sync via push webhook.
+- GreasyFork long description: `greasyfork-description.md` + `greasyfork-description.html` are the verbatim Admin-tab sync sources (raw URL + HTML/Markdown radio). NEVER edit the description on the GreasyFork site — edit the file, push, re-sync.
+- Before writing or rewriting a `greasyfork-description.*` file, ASK the user: Markdown (cheap, portable, native table/fenced-code render via Redcarpet) or HTML (hero cards, badges, styled chips — but the sanitizer strips ALL CSS except `border`, `background-color`, `color`; no `<style>` blocks, no dark/light media queries). Get an explicit pick.
+- HTML description rule: EVERY `<code>` chip and `<th>` MUST set BOTH `background-color` + `color` inline. GreasyFork flips body text per theme but keeps our chip bg fixed, so bg-only chips go invisible (2026-10-10 bug: `#eaeef2` bg + inherited white text in dark mode). Dark-safe chip: `background-color: #3d444d; color: #ffffff;`. Never use `#eaeef2`/`#f6f8fa` bgs.
 - License: TimerHooker lineage is GPL — new scripts in this family stay `GPL-3.0-or-later`. Root `LICENSE` is still MIT placeholder — replace with full GPL-3.0 text before calling license done.
 
 ## ANTI-PATTERNS (THIS PROJECT)
